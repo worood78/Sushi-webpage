@@ -123,5 +123,29 @@
         >
       </p>
     </div>
+    <script>
+      function onlineOrder() {
+        alert(" Welcome in  Sushi Order Restaurant 🍣");
+        let name = prompt(" What Is your name? ");
+        let phoneNum = prompt(" Enter your Phone Number?");
+        let order = prompt("What would you like to order? Nigiri or Maki ? ");
+        if (order === "Nigiri" || order === "Maki") {
+          alert(
+            "Thank you " +
+              name +
+              ", your order is " +
+              order +
+              ". " +
+              " You will receive a call once your order becomes ready. "
+          );
+          alert("Visit us again 🤗");
+        } else {
+          alert(" Sorry " + name + ", your order is not available.  ");
+          alert("Have a nice times 👋 ");
+        }
+      }
+      let onlinebutton = document.querySelector(".order-button");
+      onlinebutton.addEventListener("click", onlineOrder);
+    </script>
   </body>
 </html>
